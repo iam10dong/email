@@ -1,3 +1,5 @@
+#갓태훈 고마워!
+
 require 'mailgun'
 
 class EplController < ApplicationController
@@ -21,9 +23,9 @@ class EplController < ApplicationController
 
      message_params =  {
                      from: 'oball910606@gmail.com',
-                     to:   '@receiver',
-                     subject: '@youjacha',
-                     text:    '@coffee'
+                     to:   @receiver,
+                     subject: @youjacha,
+                     text:    @coffee
                     }
 
       result = mg_client.send_message('sandbox394cfd26c974496faac10dfc91a941c5.mailgun.org', message_params).to_h!

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'epl/chelsea'
   get '/' => 'epl#chelsea'
+  get '/tottenham' => "epl#tottenham"
   post '/tottenham' => "epl#tottenham"
   get '/list' => "epl#list"
   
